@@ -17,3 +17,45 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+
+
+
+
+
+  //---------Box---------
+
+  .box {
+      background-image: url("https://ww1.sinaimg.cn/large/006tNc79gy1feplxjp6s3j31kw11ynpg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+      margin-top: -20px;
+
+
+      .box-inner {
+          padding-bottom: 5px;
+          margin-top: 150px;
+          margin-bottom: 150px;
+      }
+
+      .title {
+          text-align: center;
+          margin-bottom: 80px;
+      }
+
+      .slogan {
+          color: black;
+          margin-top: 10px;
+          margin-bottom: 50px;
+          text-align: center;
+          font-size: 25px;
+          top: 12px;
+      }
+
+      .lead {
+          margin-bottom: 100px;
+          text-align: center;
+          color: white;
+      }
+  }
