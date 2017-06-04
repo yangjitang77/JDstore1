@@ -60,3 +60,67 @@
           color: white;
       }
   }
+
+
+
+
+
+
+
+
+
+
+  /*===== Show 首页-推荐商品 =====*/
+.feedback-box {
+  /* 区块 */
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0 125px 0;
+
+  /* 标题 */
+  strong {
+    margin-top: 25px;
+    color: #4A6BB5;
+  }
+
+  /* 图片 */
+  img {
+    width: 80px;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
+
+  /* 文字 */
+  p {
+    color: #666;
+    max-width: 550px;
+    margin: 0 auto 25px auto;
+  }
+
+  /* 按钮设置 */
+  .carousel-indicators {
+    bottom: -70px; //按钮位置
+
+    /* 按钮 */
+    li {
+      background-color: #ddd;
+      height: 12.5px;
+      width: 12.5px;
+      margin: 0 5px;
+      border-radius: 0;
+
+      /* 按钮转向45度 */
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    /* 按钮-启动效果 */
+    li.active {
+      background-color: #4A6BB5;
+    }
+  }
+}
