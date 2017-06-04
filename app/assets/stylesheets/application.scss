@@ -65,6 +65,48 @@
 
 
 
+  /*===== 首页通用设置 =====*/
+  .welcome-box {
+   /* 副标题 */
+   h2 {
+     font-size: 24px;
+     font-weight: 600;
+   }
+
+   /* 短分隔线 */
+   .short-line {
+     background: #0070DE;
+     margin: 15px auto 30px auto;
+     width: 150px;
+     height: 1.5px;
+   }
+
+   /* 按钮 */
+   .btn-push {
+     background-color: transparent;
+     color: #fff;
+     background-color: rgba(0, 0, 0, 0.5); //半透明背景
+     padding: 10px 20px;
+     font-size: 20px;
+
+     /* 显示特效 */
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+     -ms-transition: all 0.4s ease-in-out;
+     -o-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+   }
+
+   /* 按钮-鼠标滑动效果 */
+   .btn-push:hover {
+     background-color: #0070DE;
+     border-color: #0070DE;
+   }
+  }
+
+
+
+
 
 
 
