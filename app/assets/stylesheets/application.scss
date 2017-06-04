@@ -70,7 +70,7 @@
 
 
 
-  /*===== Show 首页-推荐商品 =====*/
+  /*===== feedback =====*/
 .feedback-box {
   /* 区块 */
   background-color: #fff;
@@ -123,4 +123,21 @@
       background-color: #4A6BB5;
     }
   }
+}
+
+
+
+
+/*===== BRAND NEW=====*/
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 420px;
+    height: 300px;
+    margin-bottom: 10px;
 }
