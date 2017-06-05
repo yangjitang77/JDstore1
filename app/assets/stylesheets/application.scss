@@ -283,3 +283,94 @@ body {
    width: 100%;
  }
 }
+
+
+
+
+
+
+/*===== Navbar 导览列 ======*/
+.navbar-default {
+ background: rgba(0,0,0,0.5); //半透明背景
+
+ /* 文字连结 */
+ a {
+   color: #fff !important;
+ }
+
+ /* 连结-鼠标效果 */
+ a:hover,
+ a:active,
+ a:focus {
+   color: #0070DE !important;
+ }
+
+ /*===== 导览列滑动特效 ======*/
+ &.scroll_navbar {
+   background-color: #fff; //背景颜色
+
+   /* 文字连结 */
+   a {
+     color: #000 !important;
+   }
+
+   /* 连结-鼠标效果 */
+   a:hover,
+   a:active,
+   a:focus {
+     color: #0070DE !important;
+   }
+ }
+
+ /*===== Logo ======*/
+ .logo-box {
+   margin-right: 15px;
+   font-size: 20px;
+ }
+
+ /*===== Dropdown ======*/
+ .dropdown-menu{
+   background-color: #fff;
+   min-width: 175px;
+
+   /* 连结 */
+   a {
+     color: #000 !important;
+     padding: 8px 17px;
+   }
+
+   /* 连结-鼠标滑动效果 */
+   a:hover {
+     background-color: #f0f0f0;
+     color: #0070DE !important;
+   }
+ }
+
+ /* 下拉选单三角箭头 */
+ .dropdown-menu:before {
+   content: "";
+   border-bottom: 10px solid #fff;
+   border-right: 10px solid transparent;
+   border-left: 10px solid transparent;
+   position: absolute;
+   top: -10px;
+   right: 16px;
+   z-index: 10;
+ }
+
+ /* 搜索栏 */
+ .search-box {
+   margin-top: 7.5px;
+
+   /* 输入框 */
+   input {
+     height: 35px;
+   }
+
+   /* 按钮 */
+   button {
+     padding: 5px 10px 5px 10px;
+     height: 35px;
+   }
+ }
+}
