@@ -108,35 +108,6 @@
 
 
 
-  /*===== 网站通用设置 ======*/
-  body {
-    overflow-x: hidden; //裁切页面内容，超出视窗不显示
-    letter-spacing: 1px; //文字间距
-    font-size: 14px; //文字大小
-    position: relative; //设定为相对位置
-
-    a {
-      text-decoration:none !important; //文字连结移除底线
-    }
-
-    /*===== 基础栏位设定 ======*/
-    .width-25 {
-      width: 25%;
-    }
-
-    .width-50 {
-      width: 50%;
-    }
-
-    .width-75 {
-      width: 75%;
-    }
-
-    .width-100 {
-      width: 100%;
-    }
-  }
-
 
   /*===== Footer 页脚 ======*/
   .footer{
@@ -238,18 +209,33 @@
 
 
 
-/*===== BRAND NEW=====*/
+.show-box {
+ /* 区块 */
+ background-color: #f8f8f8;
+ text-align: center;
+ padding: 50px 0 50px 0;
 
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
+ /* 图片 */
+ img {
+   width: 100%;
+ }
 
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
+ /* 图片区块 */
+ .box {
+   margin-top: 15px;
+   box-shadow: 2px 2px 5px #888;
+ }
+
+ /* 图片区块-鼠标滑动效果 */
+ .box:hover {
+   opacity: 0.6;
+ }
+
+ /* 文字区块 */
+ .content {
+   margin-top: 15px;
+   color: #000;
+ }
 }
 
 
@@ -262,4 +248,38 @@
   padding: 75px 0 0 0;
   height: 200px;
   background: image_url("start.jpg") no-repeat scroll top center/ cover; //背景图片
+}
+
+
+
+
+
+
+/*===== 网站通用设置 ======*/
+body {
+ overflow-x: hidden; //裁切页面内容，超出视窗不显示
+ letter-spacing: 1px; //文字间距
+ font-size: 14px; //文字大小
+ position: relative; //设定为相对位置
+
+ a {
+   text-decoration:none !important; //文字连结移除底线
+ }
+
+ /*===== 基础栏位设定 ======*/
+ .width-25 {
+   width: 25%;
+ }
+
+ .width-50 {
+   width: 50%;
+ }
+
+ .width-75 {
+   width: 75%;
+ }
+
+ .width-100 {
+   width: 100%;
+ }
 }
