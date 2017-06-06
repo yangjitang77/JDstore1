@@ -23,43 +23,43 @@
 
 
 
-  //---------Box---------
-
-  .box {
-      background-image: url("http://www.chillisauce.co.uk/staggered/wp-content/uploads/2010/08/shutterstock_205268191.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 50px;
-      margin-top: -20px;
-
-
-      .box-inner {
-          padding-bottom: 5px;
-          margin-top: 150px;
-          margin-bottom: 150px;
-      }
-
-      .title {
-          text-align: center;
-          margin-bottom: 80px;
-          color: #beffab;
-      }
-
-      .slogan {
-          color: #beffab;
-          margin-top: 10px;
-          margin-bottom: 50px;
-          text-align: center;
-          font-size: 25px;
-          top: 12px;
-      }
-
-      .lead {
-          margin-bottom: 100px;
-          text-align: center;
-          color: white;
-      }
-  }
+  // //---------Box---------
+  //
+  // .box {
+  //     background-image: url("http://www.chillisauce.co.uk/staggered/wp-content/uploads/2010/08/shutterstock_205268191.jpg");
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
+  //     margin-bottom: 50px;
+  //     margin-top: -20px;
+  //
+  //
+  //     .box-inner {
+  //         padding-bottom: 5px;
+  //         margin-top: 150px;
+  //         margin-bottom: 150px;
+  //     }
+  //
+  //     .title {
+  //         text-align: center;
+  //         margin-bottom: 80px;
+  //         color: #beffab;
+  //     }
+  //
+  //     .slogan {
+  //         color: #beffab;
+  //         margin-top: 10px;
+  //         margin-bottom: 50px;
+  //         text-align: center;
+  //         font-size: 25px;
+  //         top: 12px;
+  //     }
+  //
+  //     .lead {
+  //         margin-bottom: 100px;
+  //         text-align: center;
+  //         color: white;
+  //     }
+  // }
 
 
 
@@ -371,6 +371,42 @@ body {
    button {
      padding: 5px 10px 5px 10px;
      height: 35px;
+   }
+ }
+}
+
+
+
+
+
+
+/*===== Intro 首页-广告轮播 =====*/
+.intro-box {
+ /*===== 轮播内容 =====*/
+ .item {
+   /* 标题 */
+   h3 {
+     margin-top: -40%; //标题高度
+     font-size: 50px; //文字大小
+     letter-spacing: 5px; //文字间距
+   }
+
+   /* 内文 */
+   p {
+     font-size: 20px;
+   }
+
+   /* 图片 */
+   img {
+     width: 100%;
+   }
+ }
+
+ /*===== 换页按钮 =====*/
+ .carousel-control {
+   span {
+     margin-top: 145%; //按钮高度
+     font-size: 50px; //按钮大小
    }
  }
 }
