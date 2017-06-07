@@ -1,77 +1,218 @@
-<div class="col-md-12">
+<div class="welcome-box">
+
+
+<!-- <div class="col-md-12">
    <div class="row box">
      <div class="box-inner col-md-6 col-md-offset-3">
-       <h1 class="title">BOWTIE COMPANY</h1>
-       <p class="slogan">NEW COLLECTION
+       <h1 class="title">BOWTIE</h1>
+       <p class="slogan">新系列
+
        </p>
        <p class="lead">
          <%= link_to 'SHOP NOW', products_path, class: 'btn btn-success btn-lg' %>
        </p>
      </div>
    </div>
+ </div> -->
+
+
+
+
+
+ <!--===== 广告轮播 =====-->
+ <section class="intro-box">
+   <div class="row">
+     <div class="col-md-12">
+       <div id="intro" class="carousel slide" data-ride="carousel">
+         <!--===== 轮播按钮 =====-->
+         <ol class="carousel-indicators">
+           <li data-target="#intro" data-slide-to="0" class="active"></li>
+           <li data-target="#intro" data-slide-to="1"></li>
+           <li data-target="#intro" data-slide-to="2"></li>
+         </ol>
+
+         <!--===== 轮播内容 =====-->
+         <div class="carousel-inner" role="listbox">
+           <div class="item active">
+             <%= link_to '#', target: "_blank" do %> <!-- 图片连结，点击另开视窗 -->
+               <%= image_tag("intro_1.jpg") %> <!-- 图片位置 -->
+               <div class="carousel-caption">
+                 <h3>精致生活</h3> <!-- 标题 -->
+                 <p>让每一天都应变得隆重</p> <!-- 内文 -->
+               </div>
+             <% end %>
+           </div>
+           <div class="item">
+             <%= link_to '#', target: "_blank" do %>
+               <%= image_tag("intro_2.jpg") %>
+               <div class="carousel-caption">
+                 <h3>点点滴滴</h3>
+                 <p>点缀出自己璀璨的生活</p>
+               </div>
+             <% end %>
+           </div>
+           <div class="item">
+             <%= link_to '#', target: "_blank" do %>
+               <%= image_tag("intro_3.jpg") %>
+               <div class="carousel-caption">
+                 <h3>人海攘攘</h3>
+                 <p>只要最特别你</p>
+               </div>
+             <% end %>
+           </div>
+         </div>
+
+         <!--===== 换页按钮 =====-->
+         <a class="left carousel-control" href="#intro" role="button" data-slide="prev">
+           <span class="fa fa-angle-left" aria-hidden="true"></span> <!-- 左侧按钮图示 -->
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#intro" role="button" data-slide="next">
+           <span class="fa fa-angle-right" aria-hidden="true"></span> <!-- 右侧按钮图示 -->
+           <span class="sr-only">Next</span>
+         </a>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
+
+
+
+ <!--===== 推荐商品 =====-->
+ <section class="show-box">
+   <div class="row">
+     <div class="col-md-10 col-md-offset-1">
+       <h2>推荐商品</h2> <!-- 副标题 -->
+       <div class="short-line"></div> <!-- 分隔线 -->
+       <div class="row">
+         <div class="col-md-3">
+           <%= link_to '#' do %> <!-- 商品连结 -->
+             <div class="box"><%= image_tag("item_1.jpg") %></div> <!-- 商品图片 -->
+             <div class="content">
+               <p>纯黑</p> <!-- 商品名称 -->
+               <p>$50</p> <!-- 商品价格 -->
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_2.jpg") %></div>
+             <div class="content">
+               <p>粉色</p>
+               <p>$50</p>
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_3.jpg") %></div>
+             <div class="content">
+               <p>金属</p>
+               <p>$450</p>
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_4.jpg") %></div>
+             <div class="content">
+               <p>亮黑</p>
+               <p>$250</p>
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_5.jpg") %></div>
+             <div class="content">
+               <p>黄色</p>
+               <p>$150</p>
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_6.jpg") %></div>
+             <div class="content">
+               <p>雅黑</p>
+               <p>$80</p>
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_7.jpg") %></div>
+             <div class="content">
+               <p>银灰色</p>
+               <p>$125</p>
+             </div>
+           <% end %>
+         </div>
+         <div class="col-md-3">
+           <%= link_to '#' do %>
+             <div class="box"><%= image_tag("item_8.jpg") %></div>
+             <div class="content">
+               <p>加钻</p>
+               <p>$200</p>
+             </div>
+           <% end %>
+         </div>
+         </div>
+       </div>
+     </div>
+ </section>
+
+
+
+
+<!--===== 用户反馈 =====-->
+ <section class="feedback-box">
+   <div class="row">
+     <div class="col-md-8 col-md-offset-2">
+       <h2>用户反馈</h2> <!-- 副标题 -->
+       <div class="short-line"></div> <!-- 分隔线 -->
+       <div id="feedback" class="carousel slide" data-ride="carousel">
+         <!--===== 轮播按钮 =====-->
+         <ol class="carousel-indicators">
+           <li data-target="#feedback" data-slide-to="0" class="active"></li>
+           <li data-target="#feedback" data-slide-to="1"></li>
+           <li data-target="#feedback" data-slide-to="2"></li>
+         </ol>
+
+         <!--===== 轮播内容 =====-->
+         <div class="carousel-inner" role="listbox">
+           <div class="item active">
+             <p>这是我用过最好的网站，种类众多、下单方便、送货快速，还能订制特殊想要的款式和颜色，强力推荐。</p>
+             <%= image_tag("https://ww4.sinaimg.cn/large/006tNc79gy1fg7zt2v5mwj31800tc44c.jpg") %> <!-- 图片 -->
+             <strong>Eddie - 上班族</strong> <!-- 介绍 -->
+           </div>
+           <div class="item">
+             <p>我是这网站的忠实用户，已经在这买好几年了，质量一直很好，而且不定时会有折扣，真的很划算！</p>
+             <%= image_tag("https://ww2.sinaimg.cn/large/006tNc79gy1fg7zp642aqj30rs0igdiq.jpg") %>
+             <strong>Anna - boss</strong>
+           </div>
+           <div class="item">
+             <p>身为一个学生，预算不太多，却也能在这找到便宜又有设计感的bow tie，让我生活又添加一份乐趣。</p>
+             <%= image_tag("https://ww2.sinaimg.cn/large/006tNc79gy1fg7zp642aqj30rs0igdiq.jpg") %>
+             <strong>Kobe - 大学生</strong>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
+
+
+
+ <!--===== 立即购买 =====-->
+ <section class="push-box">
+   <%= link_to('立即购买', products_path, class:'btn btn-push' ) %>
+ </section>
+
  </div>
-
-
-
-  <div class="container-fluid text-center bg-grey">
-  <h2>BRAND NEW</h2>
-  <h4>Collection of bow ties</h4>
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="https://static.wixstatic.com/media/9c608a_8d08d80409784b9ba14f503e1efe04a4.jpg/v1/fill/w_1000,h_664,al_c,q_90/9c608a_8d08d80409784b9ba14f503e1efe04a4.webp" alt="Paris">
-        <p><strong>Blue Dots</strong></p>
-        <p>$ 25.00</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="https://static.wixstatic.com/media/a8d7c70e80da402791d3ce9d3b02ef63.jpg/v1/fill/w_1684,h_1056,al_c,q_90,usm_0.66_1.00_0.01/a8d7c70e80da402791d3ce9d3b02ef63.webp" alt="New York">
-        <p><strong>Deep Green Dots</strong></p>
-        <p>$ 25.00</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="https://static.wixstatic.com/media/9c608a_dcf378fa345f4bc187ffb059086c3db8.jpg/v1/fill/w_1584,h_1056,al_c,q_90,usm_0.66_1.00_0.01/9c608a_dcf378fa345f4bc187ffb059086c3db8.webp" alt="San Francisco">
-        <p><strong>Black Dotd</strong></p>
-        <p>$ 25.00</p>
-      </div>
-    </div>
-</div>
-
-
-
-
-<h2>What our customers say</h2>
-<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
-    </div>
-    <div class="item">
-      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-    </div>
-    <div class="item">
-      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
